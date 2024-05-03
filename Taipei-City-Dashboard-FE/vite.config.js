@@ -25,6 +25,7 @@ export default defineConfig({
 	server: {
 		host: "0.0.0.0",
 		port: 80,
+		watch: { usePolling: true },
 		proxy: {
 			"/api/dev": {
 				target: "http://dashboard-be:8080",
